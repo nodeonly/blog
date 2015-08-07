@@ -218,7 +218,7 @@ Martin Fowler对持续集成是这样定义的:
 
 https://jenkins-iojs.nodesource.com/
 
-![](/css/2015-06-26/4.png)
+![](/img/2015-06-26/4.png)
 
 
 jenkins是自建环境下用的比较多，如果是开源项目，推荐travis-ci
@@ -307,7 +307,7 @@ Istanbul - 官方介绍 a JS code coverage tool written in JS
 
 最终效果如图
 
-![](/css/2015-06-26/5.png)
+![](/img/2015-06-26/5.png)
 
 ### npm run
 
@@ -385,7 +385,7 @@ https://travis-ci.org/moajs/mongoosedao
 
 travis-ci实际上根据github的代码变动进行自动持续构建,但是有的时候它不一定更新，或者说，你需要手动选一下：
 
-![](/css/2015-06-26/1.png)
+![](/img/2015-06-26/1.png)
 
 点击`# 10 passed`,这样就可以强制它手动集成了。
 
@@ -409,12 +409,12 @@ nodejs下面的代码测试覆盖率，原理是通过[istanbul](https://github.
 
 在上，第一次添加repo，显示的是“SET UP COVERALLS”，里面有token，需要放到`.coveralls.yml`里，
 
-![](/css/2015-06-26/2.png)
+![](/img/2015-06-26/2.png)
 
 
 如果成功提交了，就可以看到数据了
 
-![](/css/2015-06-26/3.png)
+![](/img/2015-06-26/3.png)
 
 ### 在readme.md里增加badge
 
@@ -482,4 +482,4 @@ nodejs下面的代码测试覆盖率，原理是通过[istanbul](https://github.
 
 欢迎关注我的公众号【node全栈】
 
-![](/css/node全栈-公众号.png)
+![](/img/node全栈-公众号.png)

@@ -13,7 +13,7 @@ tags: []
 
 从代码看人,以pana为例
 
-![](/css/2015-06-02/p2.png)
+![](/img/2015-06-02/p2.png)
 
 ### nrm 很不错
 
@@ -35,7 +35,7 @@ https://github.com/trending
 
 有图为证
 
-![](/css/2015-06-02/pana.png)
+![](/img/2015-06-02/pana.png)
 
 话说，知道关注trending的人不太多，一般比较geek一点的人喜欢看这个，对技术非常热爱
 
@@ -80,6 +80,6 @@ todo
 
 欢迎关注我的公众号【node全栈】
 
-![](/css/node全栈-公众号.png)
+![](/img/node全栈-公众号.png)
 
 

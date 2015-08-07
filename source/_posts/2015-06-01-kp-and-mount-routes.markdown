@@ -135,6 +135,6 @@ mount-routes = auto mount express routes with routes_folder_path
 
 欢迎关注我的公众号【node全栈】
 
-![](/css/node全栈-公众号.png)
+![](/img/node全栈-公众号.png)
 
 

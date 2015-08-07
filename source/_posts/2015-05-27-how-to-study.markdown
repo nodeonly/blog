@@ -89,6 +89,6 @@ https://cnodejs.org/topic/5463f6e872f405c829029f7e
 
 欢迎关注我的公众号【node全栈】
 
-![](/css/node全栈-公众号.png)
+![](/img/node全栈-公众号.png)
 
 

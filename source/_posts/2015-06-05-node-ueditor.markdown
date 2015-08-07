@@ -96,6 +96,6 @@ serverUrl必须和上面的服务器端配置的一样
 
 欢迎关注我的公众号【node全栈】
 
-![](/css/node全栈-公众号.png)
+![](/img/node全栈-公众号.png)
 
 

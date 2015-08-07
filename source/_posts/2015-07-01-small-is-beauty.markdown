@@ -104,4 +104,4 @@ express的好处是可以把app当成子模块，路由可以挂载到当前app�
 
 欢迎关注我的公众号【node全栈】
 
-![](/css/node全栈-公众号.png)
+![](/img/node全栈-公众号.png)
