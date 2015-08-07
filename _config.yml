@@ -72,5 +72,5 @@ deploy:
 deploy:
   type: git
   repo: https://github.com/nodeonly/nodeonly.github.io.git
-  branch: gh-pages
+  branch: master
   message: 'hexo deploy'
