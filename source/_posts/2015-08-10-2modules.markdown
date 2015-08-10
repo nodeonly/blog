@@ -90,6 +90,31 @@ https://github.com/nodeonly/jsonplus
     Self referencing and comments in JSON files can be really useful while creating fixture files. I don't expect anyone to use this for production purposes. JSONPlus should help you create simpler fixtures with comments and can be also used for configuration files.
 
 
+### ghooks
+
+https://github.com/gtramontina/ghooks
+
+All documented hooks are available:
+
+- applypatch-msg
+- pre-applypatch
+- post-applypatch
+- pre-commit
+- prepare-commit-msg
+- commit-msg
+- post-commit
+- pre-rebase
+- post-checkout
+- post-merge
+- pre-push
+- pre-receive
+- update
+- post-receive
+- post-update
+- pre-auto-gc
+- post-rewrite
+
+
 
 全文完
 
