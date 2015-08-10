@@ -1,0 +1,98 @@
+---
+layout: post
+title: "big or small"
+description: ""
+keywords: ""
+category: 
+tags: []
+---
+
+## jsonplus
+
+https://github.com/nodeonly/jsonplus
+
+
+安装
+
+    npm install --save-dev jsonplus
+    
+用法非常简单
+
+    var jsonplus = require('jsonplus');
+
+    // Parse like you would with JSON.parse
+    var response = jsonplus.parse('{"foo": 5, "bar": "@self.foo"}');
+
+    console.log(response); // { foo: 5, bar: 5 }
+
+上面的例子可以看出
+
+- 接口和json的差不多，都是parse方法
+- json里支持@self
+
+@self其实jsonplus的一个特性，即Self referencing（自引用）
+
+它还有一个特性，即可以使用模板来解析，拼装
+
+    {
+      "first": "john",
+      "last": "doe",
+      "full": "{{ first }} {{ last }}"
+    }
+
+这不能简单的实现，需要resolve方法
+
+用起来也比较简单
+
+    var resolve = require('jsonplus').resolve
+
+    // This will resolve all reference strings on the given object
+    var object = resolve(AlreadyParsedJSON);
+
+    // resolve has a second argument, which provides the context for references
+    var object = resolve({ full: '{{ first }} {{ last }}' }, { first: 'john', last: 'doe' });
+
+    console.log(object) // { full: 'john doe' }
+
+过瘾么？再来个更复杂的demo
+
+    {
+      // Get all users
+      "/api/users": {
+        // Mock response
+        "response": {
+          "users": [{
+            "name": "john doe"
+          }, {
+            "name": "jane doe"
+          }]
+        }
+      },
+
+      // Get individual user
+      "/api/user/1": {
+        // Get already defined user from users mock
+        "response": "@self['/api/users'].response.users[0]"
+      },
+
+      // Get individual user
+      "/api/user/2": {
+        // Get already defined user from users mock
+        "response": "@self['/api/users'].response.users[1]"
+      }
+    }
+
+这也是我们常见的需求，复杂json解析还是必要的。如果各位熟悉rails的jbuilder就会感觉有点意思了。
+
+
+最后给出作者写这个库的原因
+
+    Self referencing and comments in JSON files can be really useful while creating fixture files. I don't expect anyone to use this for production purposes. JSONPlus should help you create simpler fixtures with comments and can be also used for configuration files.
+
+
+
+全文完
+
+欢迎关注我的公众号【node全栈】
+
+![](/img/node全栈-公众号.png)
